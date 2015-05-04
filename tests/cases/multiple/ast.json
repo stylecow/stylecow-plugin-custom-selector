@@ -1,0 +1,119 @@
+{
+  "class": "Root",
+  "children": [
+    {
+      "class": "Rule",
+      "children": [
+        {
+          "class": "Selectors",
+          "children": [
+            {
+              "class": "Selector",
+              "children": [
+                {
+                  "class": "PseudoClassFunction",
+                  "name": "matches",
+                  "children": [
+                    {
+                      "class": "Selector",
+                      "children": [
+                        {
+                          "class": "TypeSelector",
+                          "name": "h1"
+                        }
+                      ]
+                    },
+                    {
+                      "class": "Selector",
+                      "children": [
+                        {
+                          "class": "TypeSelector",
+                          "name": "h2"
+                        }
+                      ]
+                    },
+                    {
+                      "class": "Selector",
+                      "children": [
+                        {
+                          "class": "TypeSelector",
+                          "name": "h3"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "class": "Combinator",
+                  "name": " "
+                },
+                {
+                  "class": "PseudoClassFunction",
+                  "name": "matches",
+                  "children": [
+                    {
+                      "class": "Selector",
+                      "children": [
+                        {
+                          "class": "TypeSelector",
+                          "name": "div"
+                        },
+                        {
+                          "class": "ClassSelector",
+                          "name": "intro"
+                        },
+                        {
+                          "class": "Combinator",
+                          "name": " "
+                        },
+                        {
+                          "class": "TypeSelector",
+                          "name": "p"
+                        }
+                      ]
+                    },
+                    {
+                      "class": "Selector",
+                      "children": [
+                        {
+                          "class": "TypeSelector",
+                          "name": "p"
+                        },
+                        {
+                          "class": "ClassSelector",
+                          "name": "intro"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "class": "Block",
+          "children": [
+            {
+              "class": "Declaration",
+              "name": "color",
+              "vendor": null,
+              "children": [
+                {
+                  "class": "Value",
+                  "children": [
+                    {
+                      "class": "Keyword",
+                      "name": "red",
+                      "vendor": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+--heading {
+  font-size: 1rem;
+}
+@custom-selector --heading h1, h2, h3;

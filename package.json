@@ -1,0 +1,20 @@
+{
+	"name": "stylecow-plugin-custom-selector",
+	"description": "Stylecow plugin to work with @custom-selector",
+	"version": "1.0.0",
+	"author": "Oscar Otero <oom@oscarotero.com>",
+	"homepage": "https://github.com/stylecow/stylecow-plugin-custom-selector",
+	"bugs": "https://github.com/stylecow/stylecow-plugin-custom-selector/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/stylecow/stylecow-plugin-custom-selector.git"
+	},
+	"devDependencies": {
+		"stylecow": "6.*"
+	},
+	"scripts": {
+		"test": "mocha tests/cases.js"
+	},
+	"main": "index.js",
+	"license": "MIT"
+}

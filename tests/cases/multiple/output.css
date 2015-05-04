@@ -1,0 +1,3 @@
+:matches(h1, h2, h3) :matches(div.intro p, p.intro) {
+	color: red;
+}
