@@ -17,31 +17,29 @@ module.exports = function (stylecow) {
 		}
 	});
 
-	//Replace the custom-media
+	//Replace the custom-selectors
 	stylecow.addTask({
 		filter: {
-			type: 'Selector'
+			type: 'ExtensionName'
 		},
-		fn: function (selector) {
-			selector
-				.getAll('ExtensionName')
-				.forEach(function (extension) {
-					var selectors = extension.getData('@custom-selector-' + extension.name);
+		fn: function (extension) {
+			if (extension.getParent('Selector')) {
+				var selectors = extension.getData('@custom-selector-' + extension.name);
 
-					if (selectors) {
-						if (selectors.length === 1) {
-							extension.replaceWith(selectors[0].clone());
-						} else {
-							var matches = (new stylecow.PseudoClassFunction()).setName('matches');
+				if (selectors) {
+					if (selectors.length === 1) {
+						extension.replaceWith(selectors[0].clone());
+					} else {
+						var matches = (new stylecow.PseudoClassFunction()).setName('matches');
 
-							selectors.forEach(function (child) {
-								matches.push(child.clone());
-							});
+						selectors.forEach(function (child) {
+							matches.push(child.clone());
+						});
 
-							extension.replaceWith(matches);
-						}
+						extension.replaceWith(matches);
 					}
-				});
+				}
+			}
 		}
 	});
 };
