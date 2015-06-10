@@ -1,4 +1,7 @@
-# stylecow plugin custom-selector
+stylecow plugin custom-selector
+===============================
+
+[![Build Status](https://travis-ci.org/stylecow/stylecow-plugin-custom-selector.svg)](https://travis-ci.org/stylecow/stylecow-plugin-custom-selector)
 
 Stylecow plugin to work with the @custom-selector at-rule, [available in CSS Media Queries Level 4](http://dev.w3.org/csswg/css-extensions/#custom-selectors).
 
