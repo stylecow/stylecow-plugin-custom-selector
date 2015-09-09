@@ -1,42 +1,43 @@
 {
-  "class": "Root",
+  "type": "Root",
   "children": [
     {
-      "class": "Rule",
+      "type": "Rule",
       "children": [
         {
-          "class": "Selectors",
+          "type": "Selectors",
           "children": [
             {
-              "class": "Selector",
+              "type": "Selector",
               "children": [
                 {
-                  "class": "PseudoClassFunction",
+                  "type": "PseudoClass",
                   "name": "matches",
+                  "vendor": null,
                   "children": [
                     {
-                      "class": "Selector",
+                      "type": "Selector",
                       "children": [
                         {
-                          "class": "TypeSelector",
+                          "type": "TypeSelector",
                           "name": "h1"
                         }
                       ]
                     },
                     {
-                      "class": "Selector",
+                      "type": "Selector",
                       "children": [
                         {
-                          "class": "TypeSelector",
+                          "type": "TypeSelector",
                           "name": "h2"
                         }
                       ]
                     },
                     {
-                      "class": "Selector",
+                      "type": "Selector",
                       "children": [
                         {
-                          "class": "TypeSelector",
+                          "type": "TypeSelector",
                           "name": "h3"
                         }
                       ]
@@ -44,43 +45,44 @@
                   ]
                 },
                 {
-                  "class": "Combinator",
+                  "type": "Combinator",
                   "name": " "
                 },
                 {
-                  "class": "PseudoClassFunction",
+                  "type": "PseudoClass",
                   "name": "matches",
+                  "vendor": null,
                   "children": [
                     {
-                      "class": "Selector",
+                      "type": "Selector",
                       "children": [
                         {
-                          "class": "TypeSelector",
+                          "type": "TypeSelector",
                           "name": "div"
                         },
                         {
-                          "class": "ClassSelector",
+                          "type": "ClassSelector",
                           "name": "intro"
                         },
                         {
-                          "class": "Combinator",
+                          "type": "Combinator",
                           "name": " "
                         },
                         {
-                          "class": "TypeSelector",
+                          "type": "TypeSelector",
                           "name": "p"
                         }
                       ]
                     },
                     {
-                      "class": "Selector",
+                      "type": "Selector",
                       "children": [
                         {
-                          "class": "TypeSelector",
+                          "type": "TypeSelector",
                           "name": "p"
                         },
                         {
-                          "class": "ClassSelector",
+                          "type": "ClassSelector",
                           "name": "intro"
                         }
                       ]
@@ -92,18 +94,18 @@
           ]
         },
         {
-          "class": "Block",
+          "type": "Block",
           "children": [
             {
-              "class": "Declaration",
+              "type": "Declaration",
               "name": "color",
               "vendor": null,
               "children": [
                 {
-                  "class": "Value",
+                  "type": "Value",
                   "children": [
                     {
-                      "class": "Keyword",
+                      "type": "Keyword",
                       "name": "red",
                       "vendor": null
                     }

@@ -1,3 +1,5 @@
+"use strict";
+
 module.exports = function (stylecow) {
 
 	//Save all custom-selector in the root
@@ -24,19 +26,13 @@ module.exports = function (stylecow) {
 		},
 		fn: function (extension) {
 			if (extension.getParent('Selector')) {
-				var selectors = extension.getData('@custom-selector-' + extension.name);
+				let selectors = extension.getData('@custom-selector-' + extension.name);
 
 				if (selectors) {
 					if (selectors.length === 1) {
 						extension.replaceWith(selectors[0].clone());
 					} else {
-						var matches = (new stylecow.PseudoClassFunction()).setName('matches');
-
-						selectors.forEach(function (child) {
-							matches.push(child.clone());
-						});
-
-						extension.replaceWith(matches);
+						extension.replaceWithCode(':matches(' + selectors.toString() + ')', 'PseudoClassFunction', 'createSelectors');
 					}
 				}
 			}
