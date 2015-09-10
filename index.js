@@ -1,9 +1,9 @@
 "use strict";
 
-module.exports = function (stylecow) {
+module.exports = function (tasks) {
 
 	//Save all custom-selector in the root
-	stylecow.addTask({
+	tasks.addTask({
 		filter: {
 			type: 'AtRule',
 			name: 'custom-selector'
@@ -20,7 +20,7 @@ module.exports = function (stylecow) {
 	});
 
 	//Replace the custom-selectors
-	stylecow.addTask({
+	tasks.addTask({
 		filter: {
 			type: 'ExtensionName'
 		},
