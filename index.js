@@ -21,9 +21,7 @@ module.exports = function (tasks) {
 
     //Replace the custom-selectors
     tasks.addTask({
-        filter: {
-            type: 'ExtensionName'
-        },
+        filter: 'ExtensionName',
         fn: function (extension) {
             if (extension.getParent('Selector')) {
                 let selectors = extension.getData('@custom-selector-' + extension.name);
